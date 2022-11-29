@@ -39,7 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'rest_framework.authtoken',
     'rest_framework',
+    'drf_registration',
+    'django_filters',
+    
     'api',
     'accounts',
 ]
@@ -132,7 +136,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-MEDIA_ROOT =  os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 AUTH_USER_MODEL = 'accounts.UserProfile'
